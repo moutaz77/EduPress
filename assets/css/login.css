@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 70px 0px;
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 47px;
+
+        :nth-child(1) {
+            background-color: #F5F5F5;
+            color: #FF782D;
+        }
+
+        li {
+            font-family: Exo;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 27PX 20px;
+            color: var(--title);
+
+            &:active {
+                background-color: #F5F5F5;
+                color: #FF782D;
+            }
+        }
+    }
+
+    .Login {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .Register {
+            font-family: Jost;
+            font-weight: 500;
+            font-size: 18px;
+            border: none;
+            color: #000000;
+            background-color: #FFFFFF;
+            cursor: pointer;
+        }
+
+        .bars {
+            display: none;
+            border: none;
+            background-color: none;
+        }
+    }
+}
+
+.Homepage {
+    height: 60px;
+    background-color: #F5F5F5;
+
+    div {
+        display: flex;
+        padding: 18px 70px;
+        gap: 8px;
+
+        p {
+            font-family: Jost;
+            font-weight: 400;
+            font-size: 16px;
+            color: #555555;
+        }
+
+        .p {
+            color: #9d9d9d;
+        }
+    }
+}
+
+.login-register {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 70px;
+    gap: 30px;
+
+    a{
+    .button {
+        width: 549px;
+        height: 48px;
+        border-radius: 24px;
+        background-color: #FF782D;
+        color: #FFFFFF;
+        border: none;
+        cursor: pointer;
+
+    }
+    }
+
+
+    h1 {
+        font-family: Exo;
+        font-weight: 600;
+        font-size: 32px;
+        color: #000000;
+        padding-right: 432px;
+    }
+
+    p {
+        font-family: Jost;
+        font-weight: 400;
+        font-size: 18px;
+        color: #555555;
+    }
+
+    input {
+        max-width: 549px;
+        height: 48px;
+        border-radius: 8px;
+        border: 1px solid #9d9d9d;
+        background-color: #ffffff00;
+        font-family: Jost;
+        font-weight: 400;
+        font-size: 18px;
+        color: #9d9d9d;
+        padding: 11px 16px;
+    }
+
+    .login,
+    .register {
+        max-width: 609px;
+        border: 1px solid #eaeaea;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .login {
+
+        /*         height: 450px; */
+        .remember {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .Lost {
+            color: #000000;
+            cursor: pointer;
+        }
+    }
+}
+
+.footer {
+    height: 458px;
+    background-color: #F5F5F5;
+    margin: 70px 0px;
+    padding: 70px;
+
+    .element {
+        padding-top: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        p,
+        span {
+            font-family: Jost;
+            font-weight: 500;
+            font-size: 18px;
+            color: #555555;
+        }
+
+        .span {
+            color: #FF782D;
+        }
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+
+        .edupress {
+            max-width: 413px;
+
+            p {
+                max-width: 341px;
+                padding-top: 32px;
+            }
+        }
+
+        .get-help {
+            max-width: 192px;
+        }
+
+        .programs {
+            max-width: 192px;
+            height: 281px;
+        }
+    }
+
+    .contact-us {
+        max-width: 340px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        h2 {
+            padding-bottom: 10px;
+        }
+
+        .icon {
+            display: flex;
+            gap: 12px;
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width : 992px) {
+    nav {
+        padding: 30px 20px;
+
+        ul {
+            li {
+                display: none;
+            }
+
+        }
+
+        .Login {
+
+            .Register,
+            .Search {
+                display: none;
+            }
+
+            .bars {
+                display: block;
+            }
+        }
+    }
+
+    .login-register {
+        flex-direction: column;
+        padding: 56px 20px;
+
+        a{
+            .button{
+                width: 210px;
+            }
+        }
+        h1 {
+            padding-right: 223px;
+        }
+    }
+
+    .footer {
+        height: 1151px;
+        padding: 70px 20px;
+
+        .info {
+            flex-direction: column;
+        }
+
+        .copyright {
+            padding: 38px 20px;
+        }
+    }
+}
